@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Open+Sans:ital,wght@1,600;1,800&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Belanosima', sans-serif;
+    font-size: 30px;
+    color: rgb(148, 148, 148);
+}
+.containerPrincipal{
+    background-image: linear-gradient(to bottom, black, rgb(69, 68, 68),rgb(69, 68, 68),rgb(164, 162, 162));
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+header{
+    padding: 1.4rem 0;
+    flex-grow: 1;
+}
+main{
+    flex-grow: 5;
+}
+footer{
+    padding: 2rem 0;
+    /* background-color: red; */
+     flex-grow: 1;
+}
+footer p{
+    color: black;
+    filter: drop-shadow(3px 3px 5px white);
+    padding: .5rem 0 ;
+}
+#titulo{
+    font-size: 1.3rem;
+}
+a{
+    text-decoration: none;
+}
+#container_calculdora{
+    height: 100%;
+    text-align: center;
+}
+#container_calculdora h2{
+    font-size: 1.6rem;
+    margin: 2.5rem 0 1.5rem 0  ;
+    filter: drop-shadow(3px 5px 3px black);
+}
+.calculadora{
+    width: 12rem;
+    height: 17rem;
+    background-color: rgb(55, 54, 54);
+    box-shadow: 5px 5px 10px black;
+    margin: auto;
+    border-radius: 20px 20px 40px 40px;
+}
+#resultado{
+    text-align: end;
+    padding: .8rem .8rem .4rem 0;
+    overflow: hidden;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    box-sizing: border-box;
+}
+.butao_teclado{
+    background-color: rgba(0, 0, 0, 0.182);
+    border: none;
+    color: white;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.butao_teclado:active{
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+.teclado{
+    height: calc(100% - 2.98rem);
+    border-radius: 0 0 40px 40px;
+    display: grid;
+    grid-template-areas: "a1 a1 a2 a3"
+                         "a4 a5 a6 a7"
+                         "a8 a9 a10 a11"
+                         "a12 a13 a14 a15"
+                         "a16 a16 a17 a18";
+    gap: .06rem;
+}
+.btn_laranja{
+    background-color: rgb(255, 68, 0);
+}
+.btn_laranja:active{
+    background-color: rgba(255, 68, 0, 0.668);
+}
+.btn_preto{
+    background-color: rgba(0, 0, 0, 0.582);
+}
+.link_img{
+    width: 1.2rem;
+    margin: .5rem .6rem;
+    filter: drop-shadow(3px 3px 5px white);
+}
+.btn1{grid-area: a1;}
+.btn2{grid-area: a2;}
+.btn3{grid-area: a3;}
+.btn4{grid-area: a4;}
+.btn5{grid-area: a5;}
+.btn6{grid-area: a6;}
+.btn7{grid-area: a7;}
+.btn8{grid-area: a8;}
+.btn9{grid-area: a9;}
+.btn10{grid-area: a10;}
+.btn11{grid-area: a11;}
+.btn12{grid-area: a12;}
+.btn13{grid-area: a13;}
+.btn14{grid-area: a14;}
+.btn15{grid-area: a15;}
+.btn16{grid-area: a16; border-bottom-left-radius: 40px;}
+.btn17{grid-area: a17;}
+.btn18{grid-area: a18; border-bottom-right-radius: 40px;}
+
+@media only screen and (max-width:1200px){
+    *{
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width:992px){
+    *{
+        font-size: 24px;
+    }
+    .containerPrincipal{
+        height: 100vh;
+    }
+}
+@media only screen and (max-width:768px){
+    *{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:576px){
+    *{
+        font-size: 17px;
+    }
+}
+
